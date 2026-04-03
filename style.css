@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url(assets/font/Avenir.ttf);
+}
+
+@keyframes pulinho {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes sacudida {
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(15deg);
+  }
+  75%{
+    transform: rotate(0deg);
+  }
+}
+
+.logo-circus{
+    position: absolute;
+    text-align: center;
+    animation: pulinho 2s ease-in-out infinite;
+}
+
+p li{
+    font-family: "Avenir";
+}
+
+
+.descricao{
+    padding: 50px;
+}
+.item-1{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    max-width: 534px;
+    padding: 30px;
+}
+
+.item-1 h2{
+    font-family: Helvetica;
+    color: white;
+    font-weight: 600;
+    font-size: 43px;
+    text-align: left;
+}
+
+.item-1 p{
+    color: white;
+    font-size: 16px;
+}
+
+.item-2{
+    display: flex;
+    margin-left: 50px;
+    padding: 50px;
+}
+
+.item-2-2{
+    width: 424px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    animation-delay: 2s;
+}
+
+.item-2-2:hover{
+    animation: sacudida 0.5s ease-in-out forwards alternate;
+}
+
+.item-2 h2{
+    font-family: Helvetica;
+    color: white;
+    font-weight: 600;
+    font-size: 43px;
+    text-align: left;
+}
+
+.pomni{
+    width: 335px;
+}
+
+.item-1-1 button{
+    background-color: white;
+    border: none;
+    font-family: helvetica;
+    font-size: 26px;
+    font-weight: 600;
+    height: 84px;
+    width: 160px;
+    border-radius: 30px;
+}
+
+.goose{
+    width: 57px;
+    border-radius: 50%;
+}
+
+.item-2 p{
+    color: white;
+    font-size: 16px;
+}
+
+.item-2 li{
+    color: white;
+}
+
+.sec-2{
+    background-color: black;
+}
+
+.sec-2 button{
+    width: 391px;
+    height: 131px;
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    font-family: helvetica;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.linha-2{
+    padding: 30px;
+}
+
+.linha-2-col{
+    margin-right: 50px;
+}
+
+button:hover{
+    transition: 350ms ease-in-out all;
+    background-color: blue;
+    color: red;
+}
+
+button{
+    transition: 350ms ease-in-out all;
+}
+
